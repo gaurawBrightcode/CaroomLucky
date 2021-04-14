@@ -10,18 +10,22 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.github.ybq.android.spinkit.SpinKitView
-            style="@style/SpinKitView.Small.Wave"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:SpinKit_Color="@color/white" />
+
+
         <RelativeLayout
             android:id="@+id/rl_playofflinelayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_rightfiner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:src="@drawable/ic_right_arrow" />
             <TextView
                 android:id="@+id/tv_play_offline"
                 android:layout_width="wrap_content"
@@ -30,7 +34,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
-                android:background="@drawable/textview_bg"
+                android:background="@drawable/border_roundedd"
                 android:drawableEnd="@drawable/ic_man"
                 android:elevation="@dimen/_50sdp"
                 android:fontFamily="@font/vision_light"
@@ -79,7 +83,7 @@
                     android:text="Login to get bonus gems and coins \nSave your stats !"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <Button
                     android:layout_width="match_parent"

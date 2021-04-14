@@ -3,12 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/carromscreen"
     tools:context=".uifragment.ShopFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/gif" />
+    <TextView
+        android:id="@+id/tv_pageunder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Under maintenance....."
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/nightmarepills"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="60sp"
+        />
 
 </FrameLayout>

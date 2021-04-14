@@ -5,22 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/maincolor"
+    android:background="#0c0c0b"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/iv_carrom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="183dp"
+        android:layout_height="139dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:scaleType="fitCenter"
+        android:layout_marginTop="76dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/whitelogo" />
 
-
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_below="@id/iv_carrom"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/backgif" />
     <RelativeLayout
         android:layout_marginTop="@dimen/_50sdp"
-        android:layout_below="@id/iv_carrom"
+        android:layout_below="@id/gif"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView

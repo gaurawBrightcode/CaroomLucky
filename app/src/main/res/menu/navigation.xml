@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/homeicon"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/friendsicon"
+        android:title="Friends"/>
+
+    <item
+        android:id="@+id/navigation_equipment"
+        android:icon="@drawable/equipmenticon"
+        android:title="Equipment"/>
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/shopicon"
+        android:title="Shop"/>
+
 </menu>

@@ -20,14 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         logo=findViewById(R.id.iv_carrom);
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),
-                R.anim.bottom_up);
-        logo.startAnimation(animation);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(getApplicationContext(), StartScreenActivity.class));
             }
-        },2000);
+        },8000);
     }
 }

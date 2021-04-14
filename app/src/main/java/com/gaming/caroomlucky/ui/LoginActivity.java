@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import com.gaming.caroomlucky.R;
 
 public class LoginActivity extends AppCompatActivity {
-
+    ImageView Right;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,5 +25,9 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),DashboardActivity.class));
             }
         });
+        Right=findViewById(R.id.iv_rightfiner);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.blink);
+        Right.startAnimation(animation);
     }
 }
