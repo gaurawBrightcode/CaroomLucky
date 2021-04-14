@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.gaming.caroomlucky.uifragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_friends"
+        android:name="com.gaming.caroomlucky.uifragment.FriendsFragment"
+        android:label="@string/menu_friends"
+        tools:layout="@layout/fragment_friends" />
+    <fragment
+        android:id="@+id/navigation_equipment"
+        android:name="com.gaming.caroomlucky.uifragment.EquipmentFragment"
+        android:label="@string/menu_equipment"
+        tools:layout="@layout/fragment_equipment" />
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.gaming.caroomlucky.uifragment.ShopFragment"
+        android:label="@string/menu_shop"
+        tools:layout="@layout/fragment_shop" />
+</navigation>

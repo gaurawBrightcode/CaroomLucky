@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carromscreen"
+    tools:context=".ui.StartScreenActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/rl_playofflinelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_play_offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/textview_bg"
+                android:drawableEnd="@drawable/ic_man"
+                android:elevation="@dimen/_50sdp"
+                android:fontFamily="@font/vision_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Play Offline"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rl_replace"
+            android:layout_below="@id/rl_playofflinelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logopngbig" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_cnnecting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/lemonmilkbold"
+                    android:text="Connecting..."
+                    android:textColor="@android:color/white" />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:SpinKit_Color="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_blink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/amita_regular"
+                    android:text="Tip: Weekly leaderboards reward top player with gems or coin"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:fontFamily="@font/snowkeitwo"
+                    android:text="Powered By\nTANCENT"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
