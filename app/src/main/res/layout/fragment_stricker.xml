@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carromscreen"
+    tools:context=".uifragment.StrickerFragment">
+
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="95dp"
+                android:background="@drawable/toolbarbgcolor"
+                android:gravity="center"
+                android:text="USING"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relative">
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/toolbarbgcolor">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/blaze2"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/standard2"
+                        android:layout_below="@id/blaze2"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img2"
+                        android:layout_below="@id/standard2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/sun"/>
+                    <TextView
+                        android:id="@+id/chests2"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/img2"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/stage2"
+                        android:layout_below="@id/chests2"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/10"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/stage2"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stage2"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/blaze"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/standard"
+                        android:layout_below="@id/blaze"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img"
+                        android:layout_below="@id/standard"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/rec"/>
+                    <TextView
+                        android:id="@+id/chests"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/img"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/stage"
+                        android:layout_below="@id/chests"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/3"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/stage"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stage"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/blaze1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/standard1"
+                        android:layout_below="@id/blaze1"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img1"
+                        android:layout_below="@id/standard1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_carromdots"/>
+                    <TextView
+                        android:id="@+id/chests1"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/img1"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/stage1"
+                        android:layout_below="@id/chests1"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/7"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/stage1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stage1"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relative">
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/b"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/s"
+                        android:layout_below="@id/b"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/i"
+                        android:layout_below="@id/s"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_dot"/>
+
+                    <ImageView
+                        android:layout_width="31dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@id/s"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/king" />
+                    <TextView
+                        android:id="@+id/c"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/i"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/s1"
+                        android:layout_below="@id/c"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/5"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/s1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/s1"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/b2"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/s2"
+                        android:layout_below="@id/b2"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/i2"
+                        android:layout_below="@id/s2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_button"/>
+
+                    <ImageView
+                        android:id="@+id/star"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/s2"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/star" />
+                    <TextView
+                        android:id="@+id/c2"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/i2"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/s33"
+                        android:layout_below="@id/c2"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/6"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/s33"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/s33"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/b3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/s3"
+                        android:layout_below="@id/b3"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/i3"
+                        android:layout_below="@id/s3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/rec"/>
+                    <TextView
+                        android:id="@+id/c3"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/i3"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/s4"
+                        android:layout_below="@id/c3"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/7"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/s4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/s4"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relative">
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/blaze4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/standard4"
+                        android:layout_below="@id/blaze4"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img4"
+                        android:layout_below="@id/standard4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/sun"/>
+                    <TextView
+                        android:id="@+id/chests4"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/img4"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/stage4"
+                        android:layout_below="@id/chests4"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/10"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/stage4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stage4"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/blazes"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/standards"
+                        android:layout_below="@id/blazes"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/imgs"
+                        android:layout_below="@id/standards"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/rec"/>
+                    <TextView
+                        android:id="@+id/chestss"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/imgs"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/stages"
+                        android:layout_below="@id/chestss"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/3"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/stages"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stages"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleborder">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lemonmilkmedium"
+                        android:id="@+id/bl"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blaze"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/st"
+                        android:layout_below="@id/bl"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STANDARD"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/im"
+                        android:layout_below="@id/st"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/gol"/>
+                    <TextView
+                        android:id="@+id/ch"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/im"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find it in chests!"/>
+                    <TextView
+                        android:id="@+id/stt"
+                        android:layout_below="@id/ch"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paris Stage +"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/progressbarcolor"
+                        android:text="0/7"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/stt"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stt"
+                        android:layout_marginTop="15dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

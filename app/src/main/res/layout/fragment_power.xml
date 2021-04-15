@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carromscreen"
+    tools:context=".uifragment.PowerFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:background="@drawable/rectangleborder"
+        android:layout_marginTop="20dp"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/lemonmilkmedium"
+            android:id="@+id/blaze2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blaze"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/img1"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/blackdot" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangleborder">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lemonmilkmedium"
+            android:gravity="center"
+            android:text="Collect new equipment and upgrade it to\nunlock powers that improve your striker. "
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/txt1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Force"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txt2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/txt1"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/yellowprogressbar" />
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/txt2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/txt1"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/txt2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/txt1"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/txt2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/txt1"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/txt2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/txt1"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt3"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aim"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/txt3"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt2"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/yellowprogressbar"  />
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/txt3"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt2"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/txt3"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt2"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/txt3"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt2"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/txt3"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt2"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/txt4"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt3"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/yellowprogressbar"  />
+        <ImageView
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/txt4"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt3"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/txt4"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt3"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/txt4"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt3"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+        <ImageView
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@id/txt4"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txt3"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:src="@drawable/progressbarcolor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout1"
+        android:background="@drawable/rectangleborder">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relative"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/toolbarbgcolor">
+
+                        <TextView
+                            android:id="@+id/blaze6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Default"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/relative2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/blaze6"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+                            <ImageView
+                                android:id="@+id/img6"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/sun" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/relative2"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Force"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/relative2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@id/txt5"
+                            android:src="@drawable/yellowprogressbar" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/relative2"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@id/txt5"
+                            android:src="@drawable/progressbarcolor" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/relative2"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@id/txt5"
+                            android:src="@drawable/progressbarcolor" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/relative2"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@id/txt5"
+                            android:src="@drawable/progressbarcolor" />
+
+
+                        -----------------------------------
+
+                        <TextView
+                            android:id="@+id/vt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt5"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Aim"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/txt5"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/vt"
+                            android:src="@drawable/yellowprogressbar" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/txt5"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/vt"
+                            android:src="@drawable/progressbarcolor" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/txt5"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/vt"
+                            android:src="@drawable/progressbarcolor" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/txt5"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/vt"
+                            android:src="@drawable/progressbarcolor" />
+
+
+                        ---------------------
+
+
+                        <TextView
+                            android:id="@+id/txt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/vt"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/vt"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/txt9"
+                            android:src="@drawable/yellowprogressbar" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/vt"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/txt9"
+                            android:src="@drawable/progressbarcolor" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/vt"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/txt9"
+                            android:src="@drawable/progressbarcolor" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/vt"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/txt9"
+                            android:src="@drawable/progressbarcolor" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/venom1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Venom"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/venom1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rec" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout6"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:text="Points to unlock:"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt6"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/progressbarcolor"
+                            android:gravity="center"
+                            android:text="0/20"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt6"
+                            android:layout_marginTop="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/blaze7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Particle"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout8"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/blaze7"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+
+                            <ImageView
+                                android:id="@+id/img7"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rec" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/chests6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout8"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout8"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/chests6"
+                            android:layout_marginTop="10dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/linear"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="178dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/blaze5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Spine"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/relative3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/blaze5"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/sun" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/relative3"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/relative3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt8" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/venom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Radiance"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/venom"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rec" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout3"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt7" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/blaze"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Reptile"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/blaze"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rec" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/chests"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout5"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout5"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/chests" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/linear"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="178dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/c1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Roulette"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/r1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/c1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+                            <ImageView
+                                android:id="@+id/i1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/sun" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/r1"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/r1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/t1" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/v1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Wave"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/l1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/v1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rec" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l1"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/t2" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangleborder">
+
+                        <TextView
+                            android:id="@+id/b2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lemonmilkmedium"
+                            android:gravity="center"
+                            android:text="Petal"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/l2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/b2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/progressbarcolor">
+
+
+                            <ImageView
+                                android:id="@+id/i2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rec" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/c2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l2"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="Unlock\nprevious power"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/ic_padlock" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/c2" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
