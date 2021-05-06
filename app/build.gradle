@@ -12,7 +12,6 @@ android {
         targetSdk 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -41,4 +40,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.18'
+    //google api depedency
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.7.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.0'
 }

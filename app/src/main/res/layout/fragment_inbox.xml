@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/carromscreen">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+
+        <RelativeLayout
+            android:id="@+id/relative4"
+            android:background="@drawable/carromscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <RelativeLayout
+                android:id="@+id/avatar"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/toolbarbgcolor">
+
+                <ImageView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kabir"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/name"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sent you 50 coin"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="65dp"
+                android:layout_toRightOf="@id/name"
+                android:src="@drawable/coins" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_width="98dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/buttonborder"
+                android:gravity="center"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

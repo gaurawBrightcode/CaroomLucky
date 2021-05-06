@@ -27,4 +27,8 @@ public class MainActivity extends AppCompatActivity {
             }
         },8000);
     }
+//keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+//    SHA1: 5C:8A:64:66:A2:65:0A:C6:29:24:14:CE:AC:3B:42:E0:E7:E9:BF:37
+//    SHA256: 52:E0:C3:5E:77:CF:90:B8:3D:50:76:2E:99:00:DB:DC:92:A5:14:69:73:E2:C1:D2:2F:CB:E9:B2:83:3E:88:9E
+
 }

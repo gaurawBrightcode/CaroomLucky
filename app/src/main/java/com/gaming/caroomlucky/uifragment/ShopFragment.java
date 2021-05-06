@@ -19,10 +19,7 @@ public class ShopFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view=inflater.inflate(R.layout.fragment_shop, container, false);
-        pageunder=view.findViewById(R.id.tv_pageunder);
-        Animation animation = AnimationUtils.loadAnimation(getActivity(),
-                R.anim.blink);
-        pageunder.startAnimation(animation);
+
         return view;
     }
 }

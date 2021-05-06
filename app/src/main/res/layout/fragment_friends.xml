@@ -1,25 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/carromscreen"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/carromscreen"
     tools:context=".uifragment.FriendsFragment">
 
-    <pl.droidsonroids.gif.GifImageView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/maincolor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/gif" />
-  <TextView
-      android:id="@+id/tv_pageunder"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Page Under maintenance....."
-      android:textColor="@android:color/white"
-      android:fontFamily="@font/nightmarepills"
-      android:layout_alignParentTop="true"
-      android:gravity="center"
-      android:textSize="60sp"
-      />
+        android:layout_height="@dimen/_35sdp">
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/lemonmilkregular"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"/>
+
+        <LinearLayout
+            android:layout_marginLeft="70dp"
+            android:weightSum="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/redborder">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dm" />
+
+                <TextView
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/redborder">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/win" />
+
+                <TextView
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1,050"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:background="@color/maincolor"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabTextColor="@android:color/white"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tabLayout"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:layout_editor_absoluteX="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/tabLayout"
+        android:background="@drawable/bgcolor">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite friends!"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wh"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
 </RelativeLayout>
